@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* ========================================
+  レイアウト用
+========================================= */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.spacer-section {
+  margin-top: 100px;
+}
+.sec-size {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+p {
+  display: block;
+}
+
+.wrapper {
+  background-color: #121212;
+}
+/* タイトル部分 */
+.con-title {
+  position: relative;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.title-ja {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.title-en {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: #bababa;
+  font-weight: 500;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+.midtitle {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  display: inline;
+  border-bottom: 3px solid #e79316;
+}
+/* ========================================
+  ヘッダー用
+========================================= */
+
+.pageheader {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.main-nav li,
+.sns-tel li {
+  display: inline-block;
+}
+
+/* ヘッダー左側全体 */
+.nav-left {
+  display: flex;
+}
+
+/* ロゴ部分 */
+.header-title {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 110px;
+  font-size: 13px;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+.title {
+  margin-top: 15px;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.logo {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50px;
+  width: 58px;
+  height: 33px;
+  transform: translateY(-50%);
+}
+
+/* cafe/barのnav */
+
+.main-nav {
+  position: absolute;
+  left: 260px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.barnav-item,
+.nav-item {
+  position: relative;
+  margin-left: 22px;
+  padding-left: 22px;
+}
+.nav-item a {
+  color: #000;
+}
+
+.headeritem {
+  position: relative;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.barnav-item:first-child,
+.nav-item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.barnav-item::before,
+.nav-item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  top: 50%;
+  left: 0;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+
+/* ヘッダー右側 */
+
+.snslogo {
+  width: 30px;
+  height: 30px;
+}
+
+.sns-tel {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.sns-tel li {
+  margin-left: 10px;
+}
+/* ========================================
+  メインイメージ用
+========================================= */
+
+#mainbg {
+  max-height: 680px;
+  max-width: 1920px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+/* ========================================
+  ニュース用
+========================================= */
+
+.news {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+/* 新着本文 */
+
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+}
+
+time {
+  margin: 0 30px 0 0;
+  min-width: 85px;
+  font-weight: 500;
+}
+/* ========================================
+  サービス用
+========================================= */
+.cervice-logo {
+  max-width: 86px;
+  max-height: 86px;
+}
+
+.cervice ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cervice ul li {
+  border-right: 1px solid #ddd;
+  width: 33.3333%;
+}
+
+.su-ico-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.cervice ul li p {
+  text-align: center;
+  padding-top: 65px;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* ========================================
+  マップ用
+========================================= */
+
+.access-con {
+  background-color: #fafaf7;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.map-link {
+  max-width: 650px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.map-txt {
+  position: relative;
+}
+
+.map-txt p {
+  padding-top: 10%;
+  max-width: 650px;
+}
+
+.map-Storename {
+  font-size: 2rem;
+}
+/* ========================================
+  フッター用
+========================================= */
+footer {
+  background-color: black;
+  color: #fff;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* ========================================
+  カフェページ用
+========================================= */
+
+/* ヘッダー */
+.nav-under {
+  border-bottom: 3px solid #e79316;
+}
+
+/* ========================================
+カフェイメージ用
+========================================= */
+#barbg,
+#cafebg {
+  max-height: 680px;
+  max-width: 1810px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+/* カフェメニューコンテンツ */
+.menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li {
+  width: 33.3333%;
+}
+
+.menu-ico-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.menu-logo {
+  width: 100%;
+  max-width: 430px;
+  max-height: 630px;
+}
+
+/* ========================================
+barページ用
+========================================= */
+.barcolor,
+.barnav-item a {
+  color: #fff;
+}
+
+.barheader {
+  background-color: #000;
+}
+
+/* ロゴ部分 */
+
+.barnav-item {
+  margin-left: 0;
+}
+.space {
+  padding-left: 22px;
+  border-left: 1px solid #fff;
+}
+.nabline {
+  border-bottom: 3px solid #e79316;
+}
